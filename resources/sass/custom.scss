@@ -3,6 +3,10 @@ html, body {
 	height: 100%;
 }
 
+.content {
+	display: none;
+}
+
 span {
 	opacity: 1 !important;
 }
@@ -116,16 +120,6 @@ p {
 	font-size: .75rem;	
 	line-height: .6;
 }
-
-// .blog-card, .blog-card a {
-// 	color:#f9f9f9;
-// 	opacity: 0.8;
-// 	transition: opacity 1s;
-// }
-
-// .blog-card:hover {
-// 	opacity: 1;
-// }
 
 label {
   	font-size: .75rem;

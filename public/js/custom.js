@@ -28,6 +28,9 @@ $(document).ready(function() {
     $(document).on("scroll", lazyload);
     $(window).on("resize", lazyload);
     $(window).on("orientationChange", lazyload);
+
+    /*fade in on load */
+    $('.content').fadeIn(2000); 
   })
 
  

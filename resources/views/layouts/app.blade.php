@@ -20,7 +20,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="content">
     <div id="app" style="height: 100%">        
         @yield('content')         
     </div>    

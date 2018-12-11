@@ -10491,6 +10491,10 @@ body {
   height: 100%;
 }
 
+.content {
+  display: none;
+}
+
 span {
   opacity: 1 !important;
 }
