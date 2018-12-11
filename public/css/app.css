@@ -10618,7 +10618,7 @@ p {
 
 .blog-card:hover a,
 .blog-card:hover h4 {
-  opacity: .7;
+  opacity: 1;
 }
 
 .blog-card:hover .thistle {
@@ -10767,6 +10767,7 @@ a:hover {
   transition: -webkit-filter 1s;
   transition: filter 1s;
   transition: filter 1s, -webkit-filter 1s;
+  min-height: 1px;
 }
 
 #featured-weddings .card:hover .card-img,
@@ -10779,6 +10780,7 @@ a:hover {
 
 .contact-image {
   width: 100%;
+  min-height: 1px;
 }
 
 /* contact form */
@@ -10843,6 +10845,12 @@ input[type=text]:focus {
   grid-row: 4 / 6;
 }
 
+.blog-grid2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto;
+}
+
 @media only screen and (max-width: 576px) {
   .blog-grid {
     display: grid;
@@ -10872,6 +10880,13 @@ article img {
 .blog-logo {
   width: 100px;
   height: 38px;
+}
+
+/* pricing page */
+
+.deco2 {
+  width: 25px;
+  height: 25px;
 }
 
 /*footer*/

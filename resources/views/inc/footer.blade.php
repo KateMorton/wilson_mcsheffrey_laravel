@@ -52,13 +52,13 @@
         <p class="copy pr-5 d-none d-sm-inline-block">&copy; Wilson McSheffrey Photography 2018</p>
         <ul class="nav d-block">            
             <li class="nav-item d-inline-block">
-                <a class="nav-link social" href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a class="nav-link social" title="facebook" href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
             </li>
             <li class="nav-item d-inline-block">
-                <a class="nav-link social" href="https://twitter.com" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a class="nav-link social" title="twitter" href="https://twitter.com" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
             </li>
             <li class="nav-item d-inline-block">
-                <a class="nav-link social" href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+                <a class="nav-link social" title="instagram" href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
             </li>
         </ul>    
     </nav>         

@@ -40,10 +40,12 @@
         <div>
             {!!$post->body!!}
         </div> 
-        <div class="d-flex flex-column mt-4">
-            @foreach($files as $file)
-                <img  class="mb-1 w-85 align-self-center lazy" data-src="/storage/posts/{{$file->file_name}}" alt="{{$file->alt_text}}">
-            @endforeach
+        <div class="d-flex flex-column mt-4">            
+            <img  class="mb-1 w-85 align-self-center lazy" src="/storage/posts/{{$files[0]->file_name}}" alt="{{$files[0]->alt_text}}">
+            <img  class="mb-1 w-85 align-self-center lazy" src="/storage/posts/{{$files[1]->file_name}}" alt="{{$files[1]->alt_text}}">
+            @for($i = 2; $i < count($files); $i++ )
+                <img  class="mb-1 w-85 align-self-center lazy" data-src="/storage/posts/{{$files[$i]->file_name}}" alt="{{$files[$i]->alt_text}}">
+            @endfor
         </div>
         <div class="d-flex justify-content-center mt-5">
             <a href="#" data-toggle="tooltip" title="Back to top"><img class="blog-logo lazy" data-src="/storage/decorative_images/wilson-mcsheffrey_wedding_photography_logo.png" alt="logo for wilson mcsheffrey wedding photography" style="width: 100px"></a>

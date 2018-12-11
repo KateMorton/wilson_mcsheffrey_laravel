@@ -52,14 +52,28 @@
             {{Form::label('body', 'content')}} 
             {{Form::textarea('body', $post->body, ['id'=>'editor', 'class'=>'form-control rounded-0'])}}           
         </div>
-        <div class="form-checked">
-            {{Form::label('featured', 'featured', ['class'=>'form-check-label'])}} 
-            {{Form::checkbox('featured', $post->featured, true)}}
-        </div>
-        <div class="form-checked">
-            {{Form::label('published', 'published', ['class'=>'form-check-label'])}} 
-            {{Form::checkbox('published', $post->published, true)}}
-        </div>
+        @if($post->featured == '1')
+            <div class="form-checked">
+                {{Form::label('featured', 'featured', ['class'=>'form-check-label'])}} 
+                {{Form::checkbox('featured', $post->featured, true)}}
+            </div>
+        @else
+            <div class="form-checked">
+                {{Form::label('featured', 'featured', ['class'=>'form-check-label'])}} 
+                {{Form::checkbox('featured', $post->featured)}}
+            </div>
+        @endif
+        @if($post->published == '1')
+            <div class="form-checked">
+                {{Form::label('published', 'published', ['class'=>'form-check-label'])}} 
+                {{Form::checkbox('published', $post->published, true)}}
+            </div>
+        @else
+            <div class="form-checked">
+                {{Form::label('published', 'published', ['class'=>'form-check-label'])}} 
+                {{Form::checkbox('published', $post->published)}}
+            </div>
+        @endif
         <h6 class="mt-3 border-top pt-3 border-warning">Category</h6>
         @if($post->category == 'wedding')
         <div class="form-checked">

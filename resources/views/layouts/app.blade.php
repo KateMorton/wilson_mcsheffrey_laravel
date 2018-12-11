@@ -10,6 +10,9 @@
     @yield('pageTitle')
     @yield('socialMedia')
 
+    <!--favicon-->
+    <link rel="icon" href="/storage/decorative_images/wilson-mcsheffrey_wedding_photography_favicon.png" type="image/png" sizes="16x16">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day%7CRaleway:300%7CSpecial+Elite" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" > 

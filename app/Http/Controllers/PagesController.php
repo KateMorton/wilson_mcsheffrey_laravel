@@ -39,7 +39,7 @@ class PagesController extends Controller
     // Elopements page
     public function elopements(){
 
-        $posts = Post::where(['category' => 'elopement' , 'published' => 1])->orderBy('created_at', 'desc')->get();
+        $posts = Post::where(['category' => 'elopement' , 'published' => 1])->take(9)->orderBy('created_at', 'desc')->get();
        
         return view('pages.elopements')->with('posts', $posts);
     }
@@ -47,9 +47,9 @@ class PagesController extends Controller
     // shoots page
     public function shoots(){
        
-        $posts = Post::where(['category' => 'shoot' , 'published' => 1])->orderBy('created_at', 'desc')->get();
+        $posts = Post::where(['category' => 'shoot' , 'published' => 1])->take(9)->orderBy('created_at', 'desc')->get();
         
-        return view('pages.shoots');
+        return view('pages.shoots')->with('posts', $posts);
     }
 
 }
