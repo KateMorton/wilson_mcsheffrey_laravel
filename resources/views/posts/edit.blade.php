@@ -27,6 +27,10 @@
             {{Form::label('page_description', 'page description')}} 
             {{Form::text('page_description', $post->page_description, ['class'=>'form-control rounded-0'])}}           
         </div>
+        <div class="form-group">
+            {{Form::label('slug', 'slug')}} 
+            {{Form::text('slug', $post->slug, ['class'=>'form-control rounded-0', 'minlength' => '5', 'maxlength' => '255'])}}           
+        </div>
         <h6 class="mt-3 border-top pt-3 border-warning">Post Content</h6>
         <div class="form-group">
             {{Form::label('names', 'wedding couple')}} 

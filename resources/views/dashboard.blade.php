@@ -30,7 +30,7 @@ Covering weddings in Glasgow, Edinburgh, Scottish highlands and more">
                         </tr>                      
                         @foreach($posts as $post)
                             <tr>
-                                <td><a class="nav-link" href="/posts/{{$post->id}}">{{$post->names}}</a></td>
+                                <td><a class="nav-link" href="{{ url('blog/' . $post->slug) }}">{{$post->names}}</a></td>
                                 <td><a href="/posts/{{$post->id}}/uploads" class="btn rounded-0">Add Image Files</a></td>
                                 <td><a href="/posts/{{$post->id}}/edit" class="btn rounded-0">Edit</a></td>
                                 <td>

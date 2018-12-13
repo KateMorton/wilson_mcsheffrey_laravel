@@ -51,6 +51,7 @@ class PostsController extends Controller
         $this->validate($request, [
             'page_title' => 'required',
             'page_description' => 'required',
+            'slug' => 'required|alpha_dash|min:5|max:255|unique:post,slug',
             'names' => 'required',
             'venue' => 'required',
             'wedding_date' => 'required',
@@ -110,10 +111,15 @@ class PostsController extends Controller
         $featured = ($request->input('featured') == 1) ? 1 : 0;
         //check published checkbox input
         $published = ($request->input('published') == 1) ? 1 : 0;
+
+        //slug
+
+        $slug = date('m-d-Y').'-'. $request->input('slug');
         
         $post = new Post();
         $post->page_title = $request->input('page_title');
         $post->page_description = $request->input('page_description');
+        $post->slug = $slug;
         $post->names = $request->input('names');
         $post->venue = $request->input('venue');
         $post->wedding_date = $request->input('wedding_date');
@@ -215,10 +221,11 @@ class PostsController extends Controller
         $featured = ($request->input('featured') == 1) ? 1 : 0;
         //check published checkbox input
         $published = ($request->input('published') == 1) ? 1 : 0;
-        
+
         $post = Post::find($id);
         $post->page_title = $request->input('page_title');
         $post->page_description = $request->input('page_description');
+        $post->slug = $request->input('slug');
         $post->names = $request->input('names');
         $post->venue = $request->input('venue');
         $post->wedding_date = $request->input('wedding_date');
