@@ -34,7 +34,7 @@
             @foreach ($posts as $post)
                 <div> 
                     <div class="card bg-white border-white text-white p-0 rounded-0 m-0">
-                        <img class="card-img rounded-0 image lazy" data-src="/storage/featured_images/{{$post->featured_image}}" alt="{{$post->alt_featured}}">
+                        <img class="card-img rounded-0 image" src="/storage/featured_images/{{$post->featured_image}}" alt="{{$post->alt_featured}}">
                         <div class="card-img-overlay text-left">                    
                             <div class="blog-card align-self-baseline">     
                                 <h5 class="card-title mb-0 pb-0"><a href="{{ url('blog/' . $post->slug) }}">{{$post->names}}</a></h5> 
