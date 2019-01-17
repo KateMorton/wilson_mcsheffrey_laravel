@@ -44,7 +44,7 @@ class PagesController extends Controller
         return view('pages.elopements')->with('posts', $posts);
     }
 
-    // shoots page
+    // Choots page
     public function shoots(){
        
         $posts = Post::where(['category' => 'shoot' , 'published' => 1])->take(9)->orderBy('created_at', 'desc')->get();

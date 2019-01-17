@@ -15,7 +15,7 @@
 <!---->
 @include('inc.navbar') 
     <div class="container">
-        <h1>Your Investment</h1>
+        <h1>your investment</h1>
         <div>
             <p>Here at Wilson | McSheffrey we specialise in gorgeous natural wedding portraits, with a hint of vintage glamour, 
                complimented by relaxed and unobtrusive reportage to tell the story of your day. Dedicating in total about a

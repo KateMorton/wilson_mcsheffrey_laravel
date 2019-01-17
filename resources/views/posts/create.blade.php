@@ -76,14 +76,14 @@
         <br>
         <h6 class="mt-3 border-top pt-3 border-warning">Images</h6>
         <div class="custom-file mb-1">
-            {{Form::label('thumbnail', 'post thumbnail', ['class'=>'custom-file-label rounded-0'])}}
+            {{Form::label('thumbnail', 'post thumbnail (recommended  size 500px x 500px)', ['class'=>'custom-file-label rounded-0'])}}
             {{Form::file('thumbnail', ['class' => 'custom-file-input rounded-0'])}}
         </div>   
         <div class="form-group mb-3">
             {{Form::text('alt_text', 'Please add alt text', ['class'=>'form-control rounded-0', 'placeholder' => 'alt text'])}}           
         </div>     
         <div class="custom-file mb-1">
-            {{Form::label('featured_image', 'featured image',['class'=>'custom-file-label rounded-0'])}}
+            {{Form::label('featured_image', 'featured image (recommended  size 2000px x 855px)',['class'=>'custom-file-label rounded-0'])}}
             {{Form::file('featured_image', ['class' => 'custom-file-input rounded-0'])}}
         </div> 
         <div class="form-group mb-3">

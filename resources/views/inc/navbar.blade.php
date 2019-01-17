@@ -17,13 +17,13 @@
             Blog
             </a>
             <div class="dropdown-menu  rounded-0 border-0" aria-labelledby="headerNavbarDropdown">
-            <a class="dropdown-item pl-1" href="/weddings">Weddings<span><img class="pl-1 pb-1 deco" src="/storage/decorative_images/thistle.png" alt="decorative detail - thistle"></span></a>
-            <a class="dropdown-item pl-1" href="/elopements">Elopements<span><img class="pl-1 pb-1 deco" src="/storage/decorative_images/thistle.png" alt="decorative detail - thistle"></span></a>
-            <a class="dropdown-item pl-1" href="/shoots">Pre-wedding/ couples shoots<span><img class="pl-1 pb-1 deco" src="/storage/decorative_images/thistle.png" alt="decorative detail - thistle"></span></a>
+                <a class="dropdown-item pl-1" href="/weddings">Weddings<span><img class="pl-1 pb-1 deco" src="/storage/decorative_images/thistle.png" alt="decorative detail - thistle"></span></a>
+                <a class="dropdown-item pl-1" href="/elopements">Elopements<span><img class="pl-1 pb-1 deco" src="/storage/decorative_images/thistle.png" alt="decorative detail - thistle"></span></a>
+                <a class="dropdown-item pl-1" href="/shoots">Pre-wedding/ couples shoots<span><img class="pl-1 pb-1 deco" src="/storage/decorative_images/thistle.png" alt="decorative detail - thistle"></span></a>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/contact">contact</a>
+            <a class="nav-link" href="/contact">Contact</a>
         </li>
     </ul>
 </nav>

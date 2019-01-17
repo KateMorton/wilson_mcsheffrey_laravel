@@ -14,18 +14,18 @@
                 <a class="nav-link" href="/pricing">Pricing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">contact</a>
+                <a class="nav-link" href="/posts">Archive</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">client area</a>
+                <a class="nav-link" href="/contact">Contact</a>
             </li>
             @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                </li>
+                </li> --}}
             @else
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="footerNavDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

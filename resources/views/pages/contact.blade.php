@@ -26,21 +26,29 @@
 <div class="card rounded-0 contact d-none d-sm-block">        
     <img class="card-img rounded-0" src="/storage/decorative_images/wedding_image_kiss.jpg" alt="Scottish mountain lanscape">    
 </div>
-<!--mobiile banner-->
+<!--mobile banner-->
 <div class="card rounded-0 contact d-sm-none">        
     <img class="card-img rounded-0" src="/storage/decorative_images/wedding_image_kiss_mobile.jpg" alt="Scottish mountain lanscape">    
 </div>
 <!---->
 @include('inc.navbar') 
-    <div class="container text-center">
+    <div class="container">
         <h1>get in touch!</h1>
     </div>
-    <div class="container"> 
+    <div class="container contact-form"> 
+        <div>
+            <p class="mb-1">Hello! If you are planning your wedding and would like some more information about our photography 
+                    please do get in touch using the contact form, email address or telephone number below.</p>
+            <p class="mb-1">If you have it to hand please include as much information about your wedding plans
+                as possible. Information about your ceremony location, reception venue and number of guests would be 
+                especially helpful.</p> 
+            <small>&#123;Please fill in 'n/a' for any contact forms sections which are not applicable.&#125;</small> 
+        </div>
         <div class="row"> 
           <div class="col-md-6 mt-3 d-none d-md-block">
             <img class=" contact-image" src="/storage/decorative_images/contact.jpg" alt="image of bride and groom from Isle of Skye elopement wedding">
           </div> 
-          <div class="col-md-6 mb-5 mt-3">  
+          <div class="col-md-6 mb-5 mt-3">             
             @include('inc.messages') 
             {!! Form::open(['action' => 'ContactController@store', 'method' => 'POST']) !!}
                 <div class="form-group">
@@ -75,7 +83,15 @@
                 {{Form::submit('Submit', ['class' => 'btn btn-primary btn-sm float-right rounded-0 border-0 mt-0'])}}
             {!! Form::close() !!}  
             <a class="nav-link pt-3 pl-0" href="tel:+447956532292">Tel: 07956532292</a>
-           </div> 
+            {{-- <p>If you are planning your wedding and would like some more information about our photography 
+                please do get in touch using the email or telephone number below.</p>
+            <p>If you have it to hand please include in you email as much information about your wedding plans
+                as possible. Information about your ceremony location, reception venues and number of guests would be 
+                especially helpful.</p>
+            <p>We look forward to hearing from you!</p>
+            <a class="p-0 nav-link d-none d-sm-block" href="mailto:info:wilsonmcsheffrey.co.uk?Subject=enquiry"><i class="fa fa-envelope"></i>info@wilsonmcsheffrey.co.uk</a>
+            <a class="nav-link pt-3 pl-0" href="tel:+447956532292">Tel: 07956532292</a> --}}
+        </div> 
         </div>
       </div>
 @include('inc.footer')

@@ -49,7 +49,7 @@
         </div>      
     </div>       
     <!--mobile carousel-->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade d-sm-none" data-ride="carousel">
+    <div id="carouselExampleMobile" class="carousel slide carousel-fade d-sm-none" data-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="/storage/landing_page_images/wedding_photographers_fife_scotland_mobile.jpg" alt="wedding photography, woodland setting near Letham village, Fife, Scotland">

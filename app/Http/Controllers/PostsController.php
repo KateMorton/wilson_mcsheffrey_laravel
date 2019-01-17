@@ -51,7 +51,7 @@ class PostsController extends Controller
         $this->validate($request, [
             'page_title' => 'required',
             'page_description' => 'required',
-            'slug' => 'required|alpha_dash|min:5|max:255|unique:post,slug',
+            //'slug' => 'required|alpha_dash|min:5|max:255|unique:post,slug',
             'names' => 'required',
             'venue' => 'required',
             'wedding_date' => 'required',

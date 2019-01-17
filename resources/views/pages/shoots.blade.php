@@ -24,7 +24,7 @@
 @endsection
 @section('content')
 <div class="jumbotron text-center post m-0 p-0 rounded-0">        
-    <img class="card-img rounded-0" src="/storage/decorative_images/wedding_details.jpg" alt="wedding details, rings, flowers, necklace, drinks">
+    <img class="card-img rounded-0" src="/storage/decorative_images/engagement_photography_scotland_highlands_glasgow_wedding_photographers.jpg" alt="engagement photograph from the Isle of Skye">
 </div>
 @include('inc.navbar') 
     <div class="container text-center" id="blog">
