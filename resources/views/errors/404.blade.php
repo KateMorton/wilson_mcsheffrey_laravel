@@ -27,7 +27,7 @@
     <main class="d-flex align-items-center">
         <div class="container">              
             <h1 class="pt-5">404</h1>
-            <p>Sorry, the page you are looking for is no longer here.</p>    
+            <p>Sorry, the page you are looking for has moved or is no longer here.</p>    
             <p>Please navigate to our <a href="/">home</a> page to see our most recent work.</p>           
         </div>    
     </main>

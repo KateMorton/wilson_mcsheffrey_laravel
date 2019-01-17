@@ -30,7 +30,7 @@ $(document).ready(function() {
     $(window).on("orientationChange", lazyload);
 
     /*fade in on load */
-    $('.content').fadeIn(2000); 
+    $('.content').fadeIn(1500); 
   })
 
  
