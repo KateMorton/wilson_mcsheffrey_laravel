@@ -89,7 +89,7 @@
                 as possible. Information about your ceremony location, reception venues and number of guests would be 
                 especially helpful.</p>
             <p>We look forward to hearing from you!</p>
-            <a class="p-0 nav-link d-none d-sm-block" href="mailto:info:wilsonmcsheffrey.co.uk?Subject=enquiry"><i class="fa fa-envelope"></i>info@wilsonmcsheffrey.co.uk</a>
+            <a class="p-0 nav-link d-none d-sm-block" href="mailto:info@wilsonmcsheffrey.co.uk?Subject=enquiry"><i class="fa fa-envelope"></i>info@wilsonmcsheffrey.co.uk</a>
             <a class="nav-link pt-3 pl-0" href="tel:+447956532292">Tel: 07956532292</a> --}}
         </div> 
         </div>
