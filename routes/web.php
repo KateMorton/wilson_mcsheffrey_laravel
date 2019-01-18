@@ -17,6 +17,7 @@ Route::get('/pricing', 'PagesController@pricing');
 Route::get('/weddings', 'PagesController@weddings');
 Route::get('/elopements', 'PagesController@elopements');
 Route::get('/shoots', 'PagesController@shoots');
+Route::get('/sitemap', 'PagesController@sitemap');
 Route::get('/blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug','[\w\d\-\_]+');
 
 Route::get('/contact', 'ContactController@contact');

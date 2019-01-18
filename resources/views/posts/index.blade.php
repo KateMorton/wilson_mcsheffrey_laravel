@@ -12,7 +12,7 @@
     <div class="row mb-2">
         @if(count($posts)> 0)
             @foreach ($posts as $post)
-                <div class="card col-3 p-0 rounded-0" style="width: 100%">
+                <div class="card col-sm-6 col-md-3 p-0 rounded-0" style="width: 100%">
                     <img class="card-img-top rounded-0" src="/storage/thumbnails/{{$post->thumbnail}}" alt="{{$post->alt}}">
                     <div class="card-body">
                         <h6>{{$post->names}}</h5>

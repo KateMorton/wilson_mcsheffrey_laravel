@@ -44,12 +44,18 @@ class PagesController extends Controller
         return view('pages.elopements')->with('posts', $posts);
     }
 
-    // Choots page
+    // shoots page
     public function shoots(){
        
         $posts = Post::where(['category' => 'shoot' , 'published' => 1])->take(9)->orderBy('created_at', 'desc')->get();
         
         return view('pages.shoots')->with('posts', $posts);
+    }
+
+    // sitemap
+    public function sitemap(){
+       
+        return view('pages.sitemap');
     }
 
 }
