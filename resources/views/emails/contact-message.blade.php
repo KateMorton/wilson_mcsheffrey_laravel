@@ -6,16 +6,25 @@
     <style>
          p {
              font-family: font-family: 'Raleway', sans-serif;
-         }       
+         }  
+
+         h2 {
+             font-family: 'Dawning of a New Day', cursive;
+         } 
+         
+         span {
+             font-weight: bold;
+         }
     </style>
 </head>
     <body>
-        <p>First Name: {{$first_name}}</p>
-        <p>Last Name: {{$last_name}}</p>
-        <p>Date: {{$date}}</p>
-        <p>Ceremony Venue: {{$ceremony_venue}}</p>
-        <p>Reception Venue: {{$reception_venue}}</p>
-        <p>Number of Guests: {{$guests}}</p>
-        <p>Plans: {{$plans}}</p>
+        <h2>Wedding Enquiry</h2>
+        <p><span>First Name: </span> {{$first_name}}</p>
+        <p><span>Last Name: </span> {{$last_name}}</p>
+        <p><span>Date: </span> {{$date}}</p>
+        <p><span>Ceremony Venue: </span> {{$ceremony_venue}}</p>
+        <p><span>Reception Venue: </span> {{$reception_venue}}</p>
+        <p><span>Number of Guests: </span> {{$guests}}</p>
+        <p><span>Plans:</span> {{$plans}}</p>
     </body>
 </html>
