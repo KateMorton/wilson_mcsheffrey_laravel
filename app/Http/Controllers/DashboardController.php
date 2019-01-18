@@ -26,7 +26,9 @@ class DashboardController extends Controller
     {
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
+        $posts = $user->posts;
+        $posts = $posts->reverse();
         
-        return view('dashboard')->with('posts', $user->posts);
+        return view('dashboard')->with('posts', $posts);
     }
 }
