@@ -78,7 +78,7 @@
     <div class="row">
          @if(count($posts)> 0)
             @foreach ($posts as $post)                
-                <div class="card bg-white border-white col-6 col-sm-3 p-0 rounded-0 m-0">
+                <div class="card bg-white border-white col-sm-3 p-0 rounded-0 m-0">
                     <img class="card-img rounded-0 image" src="/storage/thumbnails/{{$post->thumbnail}}" alt="{{$post->alt_text}}">
                     <div class="card-img-overlay text-center d-flex justify-content-center align-items-center">
                         <h5 class="card-title"><a href="{{ url('blog/' . $post->slug) }}">{{$post->names}}</a></h5>    
